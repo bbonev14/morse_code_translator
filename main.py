@@ -26,10 +26,3 @@ def decrypt(morse_code):
     for code in morse_code:
         answer += [letter for letter in MORSE_CODE_DICT if MORSE_CODE_DICT[letter] == code]
     return ' '.join(answer)
-
-
-string = input('What do you want to translate to morse code?: ').upper()
-x = encrypt(string)
-print(x)
-
-print(decrypt(x))
