@@ -26,3 +26,5 @@ def decrypt(morse_code):
     for code in morse_code:
         answer += [letter for letter in MORSE_CODE_DICT if MORSE_CODE_DICT[letter] == code]
     return ' '.join(answer)
+
+# test
